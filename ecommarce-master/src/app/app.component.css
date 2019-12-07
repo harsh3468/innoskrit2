@@ -1,0 +1,33 @@
+.left{
+    background-image: linear-gradient(to bottom,rgba(21, 6, 241, 0.8));
+    background-size:cover;
+    height:100vh;
+}
+.row{
+    margin: 0px;
+    padding:0px;
+    margin-top: 0px;
+}
+mat-card{
+    padding: 0px;
+}
+.right{
+    background-image: linear-gradient(to bottom,rgba(255,255,255, 0.7));
+    background-size:cover;
+    height:100vh;
+}
+.detail{
+    margin-left: 36%;
+    padding-top: 20%;
+}
+a:hover{
+    color:white;
+}
+a:active{
+    color: green;
+}
+.greetings{
+    padding: 25%  17%;
+    font-size: 300%;
+    color: white;
+}

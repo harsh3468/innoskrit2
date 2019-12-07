@@ -1,0 +1,25 @@
+<mat-card>
+  <div class="row">
+    <div class="col-md-6 left">
+  <div class="greetings">  
+      <div *ngIf="time>=4 &&time <12">GOOD MORNING</div>
+      <div *ngIf="time>12 &&time <16">GOOD AFTERNOON</div>
+      <div *ngIf="time>=16 &&time <24">GOOD EVENING</div>
+      <div style="font-size:51%;"> WELCOME TO SUPERMARKET</div>
+  </div>
+
+  </div>
+    <div class="col-md-6 right">
+      <div class="row detail">
+        <div class="col-md-3 ">
+          <a mat-button routerLink="/login" >LOGIN</a>
+          <router-outlet></router-outlet>
+        </div>
+        <div class="col-md-3">
+            <a mat-button routerLink="/signup" >SIGNUP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>
+

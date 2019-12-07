@@ -1,0 +1,19 @@
+<form class="signup" action="/sign-up" method="post" [formGroup]="profileForm">
+         <mat-form-field>
+            <input matInput  placeholder="Full Name" [formControl]="name" ngModel required >
+            <mat-error *ngIf="name.invalid">{{ErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field >
+             <input matInput  type="email" placeholder="Email Id" required [formControl]="email">
+             <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+         </mat-form-field>
+         <mat-form-field >
+            <input matInput  type="password" placeholder="Password" maxlength="10" [formControl]="password" ngModel required>
+             <mat-hint >Max 10 characters</mat-hint>
+        </mat-form-field>
+        <mat-form-field >
+             <input matInput  type="password" placeholder="Confirm Password" style="margin-top: 5%;" [formControl]="confirmpassword"  ngModel required>
+        </mat-form-field>
+        <mat-error *ngIf="">abc</mat-error>
+        <a mat-raised-button color="warn" style="margin-left:60%;margin-top: 35%;">SIGNUP</a>  
+    </form>
